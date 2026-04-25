@@ -46,3 +46,81 @@ h1 {
   float: right;
   cursor: pointer;
 }
+
+#reviewsSection {
+  margin-top: 20px;
+  border-top: 1px solid #ddd;
+  padding-top: 16px;
+}
+
+#reviewsSection h3 {
+  margin-bottom: 12px;
+  color: #1a1a2e;
+}
+
+#reviewInput {
+  width: 100%;
+  height: 80px;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+  font-size: 14px;
+  resize: none;
+  margin-bottom: 8px;
+}
+
+#submitReview {
+  background-color: #1a1a2e;
+  color: white;
+  border: none;
+  padding: 8px 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  width: 100%;
+}
+
+#submitReview:hover {
+  background-color: #007acc;
+}
+
+.review-card {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 6px;
+  padding: 10px;
+  margin-bottom: 10px;
+}
+
+.review-card p {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: #333;
+}
+
+.review-actions {
+  display: flex;
+  gap: 8px;
+}
+
+.review-actions button {
+  border: none;
+  padding: 4px 10px;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 12px;
+}
+
+.like-btn {
+  background-color: #e8f4fd;
+  color: #007acc;
+}
+
+.edit-btn {
+  background-color: #fff8e1;
+  color: #f39c12;
+}
+
+.delete-btn {
+  background-color: #fdecea;
+  color: #e74c3c;
+}
