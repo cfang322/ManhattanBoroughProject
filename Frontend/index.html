@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Welcome to Manhattan</title>
+  <link rel="stylesheet" href="style.css">
+
+  <link rel="stylesheet" href="https://unpkg.com/leaflet/dist/leaflet.css" />
+</head>
+<body>
+
+  <h1>Manhattan Mosaic</h1>
+
+  <div id="map"></div>
+
+  <div id="modal" class="modal hidden">
+    <div class="modal-content">
+      <button id="closeModal">X</button>
+      <h2 id="pointName"></h2>
+      <p id="pointCategory"></p>
+      <p id="pointDescription"></p>
+      <p id="pointNeighborhood"></p>
+
+      <div id="reviewsSection">
+        <!-- Luisa will connect reviews here -->
+      </div>
+    </div>
+  </div>
+
+  <script src="https://unpkg.com/leaflet/dist/leaflet.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>

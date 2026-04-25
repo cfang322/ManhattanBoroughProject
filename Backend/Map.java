@@ -15,6 +15,7 @@ public class Map extends JPanel {
     private final double ZOOM_STEP = 0.1;
     private final double MIN_ZOOM = 0.5;
     private final double MAX_ZOOM = 3.0;
+    private int osmZoom = 13; 
 
     public Map() {
         // Load your map image
@@ -51,17 +52,17 @@ public class Map extends JPanel {
     }
 
     public void zoomIn() {
-        if (zoomFactor < MAX_ZOOM) {
-            zoomFactor += ZOOM_STEP;
-            repaint();
-        }
+    if (osmZoom < 17) {
+        osmZoom++;
+        loadMapFromOSM(); // fetch sharper tiles
+    }
     }
 
     public void zoomOut() {
-        if (zoomFactor > MIN_ZOOM) {
-            zoomFactor -= ZOOM_STEP;
-            repaint();
-        }
+    if (osmZoom > 10) {
+        osmZoom--;
+        loadMapFromOSM(); // fetch wider tiles
+    }
     }
 
     public double getZoomFactor() {
